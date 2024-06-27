@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s3">
+                <div class="bot-list">
+                    <ul id="bot-list" class="collection">
+                        <li class="collection-item" id="bot1"><img src="/logo.png" style="padding-right: 10px;">Bot 1</li>
+                        <li class="collection-item" id="bot2"><img src="/joker.png" style="padding-right: 10px;">Bot 2</li>
+                        <li class="collection-item" id="bot3"><img src="/meteo.png" style="padding-right: 10px;">Bot 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s9">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title center-align">Bienvenue sur le Chat</span>
+                        <div id="chat-box" class="chat-box">
+                            <!-- Messages du chat -->
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="input-field col s9">
+                                <input id="message-input" type="text" placeholder="Tapez votre message ici..." required>
+                            </div>
+                            <div class="col s3">
+                                <button id="send-btn" class="btn waves-effect waves-light" type="submit">
+                                    Envoyer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"  type="module"></script>
+</body>
+</html>
